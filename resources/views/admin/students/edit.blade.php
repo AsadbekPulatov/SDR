@@ -8,12 +8,7 @@
                 </div>
                 <hr>
                 <div class="card-body">
-
-
-
-
-                    <form action="{{route('admin.students.update',$data->id)}}" method="POST" accept-charset="UTF-8"
-                          >
+                    <form action="{{route('admin.students.update',$data->id)}}" method="POST" accept-charset="UTF-8">
                         @method('PUT')
                         @csrf
                         <div class="form-group">
@@ -83,7 +78,6 @@
                             </select>
                         </div>
 
-
                         <button type="submit" id="alert" class="btn btn-primary">Saqlash</button>
                         <input type="reset" class="btn btn-danger" value="Tozalash">
                     </form>
@@ -114,8 +108,6 @@
 
         }
         @endif
-
-
     </script>
 @endsection
 

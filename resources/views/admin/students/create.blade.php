@@ -8,10 +8,6 @@
                 </div>
                 <hr>
                 <div class="card-body">
-
-
-
-
                     <form action="{{route('admin.students.store')}}" method="POST" accept-charset="UTF-8">
                         @csrf
                         <div class="form-group">
@@ -131,7 +127,6 @@
 
     </script>
     <script>
-
         let errors = @json($errors->all());
         @if($errors->any())
         console.log(errors);
@@ -150,7 +145,5 @@
             })
         }
         @endif
-
-
     </script>
 @endsection
